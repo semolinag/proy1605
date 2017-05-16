@@ -8,7 +8,7 @@ class Conexion{
     var $dbhost="localhost";
     var $dbname="exportaciones";
     
-    public function conectar(){
+    public function Conectar(){
          $this->objconn = new mysqli($this->dbhost,
                                       $this->dbusr,
                                       $this->dbpwd,
