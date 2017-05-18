@@ -15,9 +15,14 @@ and open the template in the editor.
     </head>
     <body>
         <a href="revision.php"> Revisi&oacute;n sesi&oacute;n</a>
+        <?php if(isset($_SESSION['USR'])){?>
         <form>
-            <input type="password" nombre="clave">
+            <div><input type="text" name="nombre"></div>
+            <div><input type="password" nombre="clave"></div>
+            <input type="submit" value="Acceder">
         </form>
+        <?php } ?>
+        <h1>ejemplos de encriptacion con el hash md5</h1>
         <?php 
             echo md5('#holamundo&');
             echo '<br>';
