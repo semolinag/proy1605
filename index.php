@@ -15,7 +15,10 @@ and open the template in the editor.
     </head>
     <body>
         <a href="revision.php"> Revisi&oacute;n sesi&oacute;n</a>
-        <?php
+        <form>
+            <input type="password" nombre="clave">
+        </form>
+        <?php 
             echo md5('#holamundo&');
             echo '<br>';
             echo md5('holamundo');
@@ -23,8 +26,7 @@ and open the template in the editor.
             echo md5('HoLaMundo');
             echo '<br>';
             echo md5('HOLAMundo');
-            echo '<br>';
+            echo '<br>';                                                                                                                                                                                    
         ?>
-        
     </body>
 </html>
